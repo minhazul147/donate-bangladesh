@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Bangladesh</title>
+    <!-- Link add -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font setup -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: 'rgb(180, 244, 97)',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <header class=" h-24 sticky top-0 z-10">
+        <div class="  bg-red-50  flex justify-around p-5">
+            <button id="btn-blog" class="btn font-bold bg-primary w-20 h-6">
+                Blog
+            </button>
+            <div class="flex">
+                <img class="w-10 h-10" src="./assets/logo.png" alt="">
+                <p class="font-bold mt-3 ml-2">Donate Bangladesh</p>
+            </div>
+            <div class="flex">
+                <img class="w-6 h-6" src="./assets/coin.png" alt="">
+                <p id="account-balance" class=" ml-2 font-medium">5000 BDT</p>
+            </div>
+        </div>     
+    </header>
+
+    <main>
+        
+          <!-- 2 button  -->
+        <div class="mt-14 flex justify-center gap-4 sticky top-32 z-10 bg-blur">
+            <button class="bg-primary font-bold w-28 h-10  rounded-lg ">
+                Donation
+            </button>
+            <button class="border border-gray-300 text-gray-600 font-semibold w-28 h-10  rounded-lg ">
+                History
+            </button>
+        </div>
+
+        <!-- Donation card start here -->
+
+        <div class="w-11/12 mx-auto mt-6">
+            <div class="card lg:card-side border border-gray-200 p-8 card-style mb-8">
+                <figure class="lg:w-2/4">
+                    <img class="w-full h-auto"
+                        src="./assets/noakhali.png"
+                        alt="the flood in Noakhli" />
+                </figure>
+                <div class="card-body p-0 md:pl-8 lg:w-2/4">
+                    <div
+                        class="flex justify-center space-x-2 w-36 rounded-lg p-3 bg-[#1111110D] mb-4 mt-8 lg:mt-5">
+                        <img src="./assets/coin.png" alt>
+                        <p class="text-gray"><span
+                                id="donate-result-show-noakhli">0</span>
+                            BDT</p>
+                    </div>
+                    <h2 id="noakhaliTitle" class="card-title">Donate for
+                        Flood at Noakhali, Bangladesh</h2>
+                    <p class="text-gray font-sm "> The recent
+                        floods in Feni have devastated local communities,
+                        leading to severe disruption and loss. Your generous
+                        donation will help provide immediate aid, including
+                        food, clean water, and medical supplies, to those
+                        affected by this calamity. Together, we can offer
+                        crucial support and help rebuild lives in the
+                        aftermath of this disaster. Every contribution
+                        counts towards making a real difference. Please
+                        consider donating today to assist those in urgent
+                        need.</p>
+                    <div class="my-8">
+                        <input type="text" id="input-noakhali"
+                            placeholder="Write Donation Amount"
+                            class="border border-gray-300 w-full p-3 rounded-lg" />
+                    </div>
+                    <div class="card-actions justify-center">
+                        <button
+                            id="donate-btn-noakhali"
+                            class="w-full btn-color px-8 py-4 bg-primary rounded-lg font-bold">Donate
+                            Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+</body>
+</html>
