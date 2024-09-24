@@ -29,7 +29,7 @@
     <header class="sticky top-0 z-10 backdrop-blur-md border ">
         <div class="  bg-red-50   md:flex md:justify-around p-5 text-center">
             <button id="btn-home" class="btn font-bold bg-primary w-20 h-6">
-               <a href="./blog.html">Home</a>
+               <a href="./blog.html">Blog</a>
             </button>
             <div class="flex justify-center ">
                 <img class="w-7  md:w-10 md:h-10" src="./assets/logo.png" alt="">
@@ -43,10 +43,10 @@
         
          <!-- 2 button  -->
          <div class="mt-10 flex justify-center gap-4 p-5 ">
-            <button class="bg-primary font-bold w-28 h-10  rounded-lg ">
+            <button id="btn-donate" class="bg-primary font-bold w-28 h-10  rounded-lg ">
                 Donation
             </button>
-            <button class="border border-gray-300 text-gray-600 font-semibold w-28 h-10  rounded-lg ">
+            <button id="history-tab" class="border border-gray-300 text-gray-600 font-semibold w-28 h-10  rounded-lg ">
                 History
             </button>
         </div>
@@ -58,7 +58,7 @@
 
         <!-- Donation card start here -->
 
-        <div class="w-11/12 mx-auto mt-6">
+        <div id="card-section" class="w-11/12 mx-auto mt-6">
             <div class="card lg:card-side border border-gray-200 p-8 card-style mb-8">
                 <figure class="lg:w-2/4">
                     <img class="w-full h-auto"
@@ -187,6 +187,11 @@
          </div>
 
         <!-- Model End -->
+         <!-- History section start-->
+
+         <div id="history-section" class="hidden container mx-auto  "></div>
+
+         <!-- History section END -->
 
        <script src="./js/utilities.js"></script>
        <script src="./js/index.js"></script>
