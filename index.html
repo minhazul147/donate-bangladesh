@@ -26,26 +26,23 @@
     </script>
 </head>
 <body>
-    <header class=" h-24 sticky top-0 z-10">
-        <div class="  bg-red-50  flex justify-around p-5">
-            <button id="btn-blog" class="btn font-bold bg-primary w-20 h-6">
-                Blog
+    <header class="sticky top-0 z-10 backdrop-blur-md border ">
+        <div class="  bg-red-50   md:flex md:justify-around p-5 text-center">
+            <button id="btn-home" class="btn font-bold bg-primary w-20 h-6">
+               <a href="./blog.html">Home</a>
             </button>
-            <div class="flex">
-                <img class="w-10 h-10" src="./assets/logo.png" alt="">
+            <div class="flex justify-center ">
+                <img class="w-7  md:w-10 md:h-10" src="./assets/logo.png" alt="">
                 <p class="font-bold mt-3 ml-2">Donate Bangladesh</p>
             </div>
-            <div class="flex">
+            <div class="flex justify-center mt-3">
                 <img class="w-6 h-6" src="./assets/coin.png" alt="">
                 <p id="account-balance" class=" ml-2 font-medium">5000 BDT</p>
             </div>
-        </div>     
-    </header>
-
-    <main>
+        </div> 
         
-          <!-- 2 button  -->
-        <div class="mt-14 flex justify-center gap-4 sticky top-32 z-10 bg-blur">
+         <!-- 2 button  -->
+         <div class="mt-10 flex justify-center gap-4 p-5 ">
             <button class="bg-primary font-bold w-28 h-10  rounded-lg ">
                 Donation
             </button>
@@ -53,6 +50,11 @@
                 History
             </button>
         </div>
+    </header>
+
+    <main>
+        
+         
 
         <!-- Donation card start here -->
 
@@ -80,7 +82,7 @@
                             class="border border-gray-300 w-full p-3 rounded-lg" />
                     </div>
                     <div class="card-actions justify-center">
-                        <button
+                        <button onclick=""
                             id="donate-btn-noakhali"
                             class="w-full btn-color px-8 py-4 bg-primary rounded-lg font-bold">Donate
                             Now</button>
@@ -186,7 +188,8 @@
 
         <!-- Model End -->
 
-       
+       <script src="./js/utilities.js"></script>
+       <script src="./js/index.js"></script>
 
     </main>
 </body>

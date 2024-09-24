@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font setup -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: 'rgb(180, 244, 97)',
+                    }
+                }
+            }
+        }
+    </script>
+
+</head>
+<body>
+    <header class=" h-24">
+        <div class="  bg-red-50   md:flex md:justify-around p-5 text-center">
+            <button id="btn-home" class="btn font-bold bg-primary w-20 h-6">
+               <a href="./index.html">Home</a>
+            </button>
+            <div class="flex justify-center ">
+                <img class="w-7  md:w-10 md:h-10" src="./assets/logo.png" alt="">
+                <p class="font-bold mt-3 ml-2">Donate Bangladesh</p>
+            </div>
+            <div class="flex justify-center mt-3">
+                <img class="w-6 h-6" src="./assets/coin.png" alt="">
+                <p id="account-balance" class=" ml-2 font-medium">5000 BDT</p>
+            </div>
+        </div>     
+    </header>
+
+    <main class="w-11/12 mx-auto">
+        <div class="flex mt-20 md:mt-5">
+            <h1 class="text-2xl font-extrabold md:text-4xl">Important FAQ </h1>
+            <img class="w-8 ml-2" src="./assets/question.png" alt="">
+        </div>
+        
+
+        <div class="collapse collapse-arrow mt-6 border border-gray-200">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title text-xl font-medium">what is the Document Object Model(DOM)</div>
+            <div class="collapse-content">
+              <p>The Document Object Model (DOM) is the data representation of the objects that comprise the structure and content of a document on the web. This guide will introduce the DOM, look at how the DOM represents an HTML document in memory and how to use APIs to create web content and applications.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow border border-gray-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+            <div class="collapse-content">
+              <p>JavaScript provides several methods to select DOM elements. Here are some of them: <br> 1.Using getElementById <br> 2.Using getElementsByClassName <br> 3.Using getElementsByTagName <br> 4.Using querySelector <br> 5.Using querySelectorAll <br>
+            </p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow border border-gray-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
+            <div class="collapse-content">
+              <p>Event delegation refers to the process of using event propagation (bubbling) to handle events at a higher level in the DOM than the element on which the event originated. It allows us to attach a single event listener for elements that exist now or in the future.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow border border-gray-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+            <div class="collapse-content">
+              <p>Changing an element's style (CSS) attributes is one of the ways in which the DOM can be used. For example, in the code below, the onfocus event handler method is used to change the input element's style when the user clicks inside it. When this event occurs, the element's background color will change to purple.</p>
+            </div>
+          </div>
+    </main>
+
+    <script src="./js/index.js"></script>
+</body>
+</html>
