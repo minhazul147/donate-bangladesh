@@ -1,10 +1,10 @@
 document
-    .getElementById("donate-btn-feni")
+    .getElementById("donate-btn-protest")
     .addEventListener("click", function (event) {
         event.preventDefault();
-        const inputNumber = getInputFieldValueById("input-feni");
+        const inputNumber = getInputFieldValueById("input-protest");
         const balance = getTextFieldValueById("account-balance");
-        const title = document.getElementById("feni-title").innerText;
+        const title = document.getElementById("protest-title").innerText;
 
         if (inputNumber <= 0 || isNaN(inputNumber)) {
             alert("Please enter a valid number");
@@ -17,10 +17,10 @@ document
         const totalBalance = balance - inputNumber;
         document.getElementById("account-balance").innerText = totalBalance;
         const donateAmount = parseFloat(
-            document.getElementById("donate-result-show-feni").innerText
+            document.getElementById("donate-result-show-protest").innerText
         );
         const totalDonateAmount = inputNumber + donateAmount;
-        document.getElementById("donate-result-show-feni").innerText =
+        document.getElementById("donate-result-show-protest").innerText =
             totalDonateAmount;
 
 
@@ -63,6 +63,7 @@ document
             donateBtnStyle.classList.remove("bg-primary");
             donateBtnStyle.classList.add("border", "border-gray-300", "text-gray-600", "font-semibold");
           });
+
 
     });
 

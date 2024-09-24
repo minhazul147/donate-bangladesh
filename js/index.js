@@ -43,9 +43,11 @@ document
         const div = document.createElement("div");
         div.classList.add("border");
         div.classList.add("p-5", "mb-5", "rounded-lg");
-        div.innerHTML = `<p class="text-lg font-medium">${inputNumber} Taka is
+        div.innerHTML = `
+                         <p class="text-lg font-medium">${inputNumber} Taka is
                             Donated For ${title}</p>
-                            <p class = "text-xs"> Date: ${new Date()}</p>`;
+                         <p class = "text-xs"> Date: ${new Date()}</p>
+                            `;
         document.getElementById("history-section").appendChild(div);
     
 
