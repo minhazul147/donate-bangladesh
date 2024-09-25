@@ -38,8 +38,7 @@ document
         }
         closeModal;
 
-        // History button
-
+        // show history
         const div = document.createElement("div");
         div.classList.add("border");
         div.classList.add("p-5", "mb-5", "rounded-lg");
@@ -49,23 +48,7 @@ document
                          <p class = "text-xs"> Date: ${new Date()}</p>
                             `;
         document.getElementById("history-section").appendChild(div);
-    
-
-        document.getElementById("history-tab").addEventListener("click", function () {
-            const historyBtnStyle = document.getElementById("history-tab");
-            historyBtnStyle.classList.add("bg-primary", "font-bold");
-          
-            const historySection = document.getElementById("history-section");
-            historySection.classList.remove("hidden");
-          
-            const donateSection = document.getElementById("card-section");
-            donateSection.classList.add("hidden");
-          
-            const donateBtnStyle = document.getElementById("btn-donate");
-            donateBtnStyle.classList.remove("bg-primary");
-            donateBtnStyle.classList.add("border", "border-gray-300", "text-gray-600", "font-semibold");
-          });
-
+         
 
     });
 

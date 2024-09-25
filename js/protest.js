@@ -40,6 +40,7 @@ document
 
         // History button
 
+
         const div = document.createElement("div");
         div.classList.add("border");
         div.classList.add("p-5", "mb-5", "rounded-lg");
